@@ -1,0 +1,777 @@
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* common */
+.event-section-label {
+    display: inline-block;
+    padding: 10px 22px;
+    border: 1px solid #c6ff2e;
+    border-radius: 999px;
+    color: #c6ff2e;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    margin-bottom: 24px;
+}
+
+.logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* animation base */
+.fade-up,
+.fade-left,
+.fade-right {
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-up {
+    transform: translateY(40px);
+}
+
+.fade-left {
+    transform: translateX(-40px);
+}
+
+.fade-right {
+    transform: translateX(40px);
+}
+
+.is-visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* hero */
+.event-detail-hero {
+    position: relative;
+    min-height: 100vh;
+    background: url("../img/pullup-event.jpg") center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 20px 90px;
+}
+
+.event-detail-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.78));
+}
+
+.event-detail-hero-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 960px;
+}
+
+.event-detail-label {
+    display: inline-block;
+    padding: 10px 22px;
+    border: 1px solid #c6ff2e;
+    border-radius: 999px;
+    color: #c6ff2e;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    margin-bottom: 24px;
+}
+
+.event-detail-title {
+    font-size: 88px;
+    line-height: 1.05;
+    font-weight: 900;
+    color: #c6ff2e;
+    margin-bottom: 24px;
+    text-shadow: 0 0 18px rgba(198, 255, 46, 0.12);
+}
+
+.event-detail-text {
+    font-size: 24px;
+    line-height: 1.9;
+    color: #f4f4f4;
+    margin-bottom: 42px;
+}
+
+.event-detail-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.event-detail-btn {
+    display: inline-block;
+    min-width: 230px;
+    padding: 18px 34px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.event-detail-btn--primary {
+    background: #c6ff2e;
+    color: #000;
+    box-shadow: 0 10px 30px rgba(198, 255, 46, 0.18);
+}
+
+.event-detail-btn--secondary {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    color: #fff;
+    background: transparent;
+}
+
+.event-detail-btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.94;
+}
+
+/* sections */
+.event-impact,
+.event-about,
+.event-flow,
+.event-merit,
+.event-notes,
+.event-highlights,
+.event-entry {
+    padding: 110px 20px;
+}
+
+.event-impact-inner,
+.event-about-inner,
+.event-flow-inner,
+.event-merit-inner,
+.event-notes-inner,
+.event-highlights-inner,
+.event-entry-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* impact */
+.event-impact-head,
+.event-flow-head,
+.event-merit-head,
+.event-notes-head,
+.event-highlights-head {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.event-impact-title,
+.event-flow-title,
+.event-merit-title,
+.event-notes-title,
+.event-entry-title {
+    font-size: 64px;
+    line-height: 1.15;
+    font-weight: 900;
+    color: #c6ff2e;
+    margin-bottom: 22px;
+}
+
+.event-impact-lead,
+.event-flow-lead,
+.event-notes-lead,
+.event-entry-text {
+    font-size: 20px;
+    line-height: 1.9;
+    color: #f0f0f0;
+}
+
+.event-impact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.event-impact-card {
+    background: linear-gradient(180deg, rgba(198, 255, 46, 0.06), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(198, 255, 46, 0.16);
+    border-radius: 30px;
+    padding: 34px 28px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 0 1px rgba(198, 255, 46, 0.03) inset;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-impact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(198, 255, 46, 0.08);
+}
+
+.event-impact-mini {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    color: #c6ff2e;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.event-impact-card h3 {
+    font-size: 34px;
+    line-height: 1.3;
+    color: #c6ff2e;
+    margin-bottom: 16px;
+    font-weight: 900;
+}
+
+.event-impact-card p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #f4f4f4;
+}
+
+/* about */
+.event-about-inner {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.event-about-image {
+    height: 100%;
+}
+
+.event-about-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 620px;
+    display: block;
+    border-radius: 34px;
+    object-fit: cover;
+}
+
+.event-about-title {
+    font-size: 66px;
+    line-height: 1.15;
+    font-weight: 900;
+    color: #c6ff2e;
+    margin-bottom: 28px;
+}
+
+.event-about-text {
+    font-size: 19px;
+    line-height: 2;
+    color: #f1f1f1;
+    margin-bottom: 20px;
+}
+
+.event-about-points {
+    margin-top: 32px;
+    display: grid;
+    gap: 16px;
+}
+
+.event-about-point {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background: #0d0d0d;
+    border: 1px solid rgba(198, 255, 46, 0.14);
+    border-radius: 22px;
+    padding: 20px 22px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.event-about-point:hover {
+    transform: translateX(8px);
+    border-color: rgba(198, 255, 46, 0.35);
+}
+
+.event-about-point span {
+    min-width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #c6ff2e;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.event-about-point p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #fff;
+}
+
+/* flow */
+.event-flow-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.event-flow-card {
+    background: #0d0d0d;
+    border: 1px solid rgba(198, 255, 46, 0.12);
+    border-radius: 28px;
+    padding: 32px 24px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.event-flow-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(198, 255, 46, 0.32);
+}
+
+.event-flow-step {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(198, 255, 46, 0.4);
+    color: #c6ff2e;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    margin-bottom: 20px;
+}
+
+.event-flow-card h3 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.event-flow-card p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #dedede;
+}
+
+/* merit */
+.event-merit-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.event-merit-card {
+    background: linear-gradient(180deg, rgba(198, 255, 46, 0.08), rgba(255, 255, 255, 0.03));
+    border: 1px solid rgba(198, 255, 46, 0.16);
+    border-radius: 30px;
+    padding: 36px 28px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-merit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(198, 255, 46, 0.08);
+}
+
+.event-merit-number {
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 0.16em;
+    color: #c6ff2e;
+    margin-bottom: 20px;
+}
+
+.event-merit-card h3 {
+    font-size: 28px;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.event-merit-card p {
+    font-size: 16px;
+    line-height: 1.95;
+    color: #e4e4e4;
+}
+
+/* notes */
+.event-notes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.event-note-card {
+    background: #0d0d0d;
+    border: 1px solid rgba(198, 255, 46, 0.14);
+    border-radius: 28px;
+    padding: 30px 26px;
+    min-height: 220px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.event-note-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(198, 255, 46, 0.34);
+}
+
+.event-note-head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.event-note-number {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #c6ff2e;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.event-note-card h3 {
+    font-size: 26px;
+    line-height: 1.5;
+    margin: 0;
+    color: #fff;
+}
+
+.event-note-card p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #dfdfdf;
+}
+
+/* other events */
+.event-highlights .event-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.event-highlights .event-sub-card {
+    min-height: 380px;
+    border-radius: 28px;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    transition: transform 0.35s ease;
+}
+
+.event-highlights .event-sub-card:hover {
+    transform: translateY(-8px) scale(1.01);
+}
+
+.event-highlights .event-sub-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.18));
+}
+
+.event-highlights .event-sub-content {
+    position: relative;
+    z-index: 1;
+    padding: 28px 22px;
+}
+
+.event-highlights .event-sub-content h4 {
+    font-size: 22px;
+    color: #c6ff2e;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.event-highlights .event-sub-content p {
+    color: #f0f0f0;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+/* images */
+.event-bench {
+    background-image: url("../img/bench-event.jpg");
+}
+
+.event-bento {
+    background-image: url("../img/bento-event.jpg");
+}
+
+.event-study {
+    background-image: url("../img/study-event.png");
+}
+
+.event-morning {
+    background-image: url("../img/morning-training.jpg");
+}
+
+/* entry */
+.event-entry-inner {
+    max-width: 1000px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(198, 255, 46, 0.14), rgba(255, 255, 255, 0.03));
+    border: 1px solid rgba(198, 255, 46, 0.16);
+    border-radius: 34px;
+    padding: 80px 34px;
+}
+
+.event-entry-btn {
+    display: inline-block;
+    margin-top: 30px;
+    background: #c6ff2e;
+    color: #000;
+    text-decoration: none;
+    font-weight: 900;
+    padding: 18px 40px;
+    border-radius: 999px;
+    transition: 0.3s;
+    box-shadow: 0 10px 30px rgba(198, 255, 46, 0.18);
+}
+
+.event-entry-btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.94;
+}
+
+/* tablet */
+@media (max-width: 1100px) {
+    .event-impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .event-about-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .event-about-image img {
+        min-height: 420px;
+    }
+
+    .event-flow-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .event-merit-list {
+        grid-template-columns: 1fr;
+    }
+
+    .event-highlights .event-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .event-detail-title {
+        font-size: 64px;
+    }
+
+    .event-about-title,
+    .event-impact-title,
+    .event-flow-title,
+    .event-merit-title,
+    .event-notes-title,
+    .event-entry-title {
+        font-size: 48px;
+    }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+
+    .fade-up,
+    .fade-left,
+    .fade-right {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .event-detail-hero {
+        min-height: 85vh;
+        padding: 110px 16px 70px;
+        background-position: center;
+    }
+
+    .event-detail-label,
+    .event-section-label {
+        font-size: 11px;
+        padding: 8px 16px;
+        margin-bottom: 18px;
+    }
+
+    .event-detail-title {
+        font-size: 42px;
+        line-height: 1.15;
+        margin-bottom: 18px;
+    }
+
+    .event-detail-text {
+        font-size: 16px;
+        line-height: 1.8;
+        margin-bottom: 30px;
+    }
+
+    .event-detail-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .event-detail-btn {
+        width: 100%;
+        min-width: auto;
+        padding: 16px 20px;
+        font-size: 15px;
+    }
+
+    .event-impact,
+    .event-about,
+    .event-flow,
+    .event-merit,
+    .event-notes,
+    .event-highlights,
+    .event-entry {
+        padding: 74px 16px;
+    }
+
+    .event-impact-head,
+    .event-flow-head,
+    .event-merit-head,
+    .event-notes-head,
+    .event-highlights-head {
+        margin-bottom: 36px;
+    }
+
+    .event-impact-title,
+    .event-flow-title,
+    .event-merit-title,
+    .event-notes-title,
+    .event-entry-title,
+    .event-about-title {
+        font-size: 34px;
+        line-height: 1.25;
+        margin-bottom: 16px;
+    }
+
+    .event-impact-lead,
+    .event-flow-lead,
+    .event-notes-lead,
+    .event-entry-text,
+    .event-about-text {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .event-impact-grid,
+    .event-flow-list,
+    .event-notes-grid,
+    .event-highlights .event-list {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .event-impact-card {
+        min-height: auto;
+        padding: 26px 20px;
+    }
+
+    .event-impact-card h3 {
+        font-size: 28px;
+    }
+
+    .event-about-inner {
+        gap: 28px;
+    }
+
+    .event-about-image img {
+        min-height: auto;
+        height: 300px;
+        border-radius: 24px;
+    }
+
+    .event-about-point {
+        align-items: center;
+        padding: 16px;
+    }
+
+    .event-about-point span {
+        min-width: 44px;
+        width: 44px;
+        height: 44px;
+        font-size: 14px;
+    }
+
+    .event-about-point p {
+        font-size: 15px;
+    }
+
+    .event-flow-card,
+    .event-merit-card,
+    .event-note-card {
+        padding: 24px 18px;
+    }
+
+    .event-flow-card h3,
+    .event-merit-card h3,
+    .event-note-card h3 {
+        font-size: 22px;
+    }
+
+    .event-flow-card p,
+    .event-merit-card p,
+    .event-note-card p {
+        font-size: 15px;
+        line-height: 1.85;
+    }
+
+    .event-note-card {
+        min-height: auto;
+    }
+
+    .event-note-head {
+        align-items: flex-start;
+    }
+
+    .event-note-number {
+        width: 46px;
+        height: 46px;
+        font-size: 14px;
+    }
+
+    .event-highlights .event-sub-card {
+        min-height: 300px;
+    }
+
+    .event-highlights .event-sub-content {
+        padding: 22px 18px;
+    }
+
+    .event-highlights .event-sub-content h4 {
+        font-size: 20px;
+    }
+
+    .event-highlights .event-sub-content p {
+        font-size: 14px;
+    }
+
+    .event-entry-inner {
+        padding: 54px 20px;
+        border-radius: 24px;
+    }
+
+    .event-entry-btn {
+        width: 100%;
+        padding: 16px 20px;
+        font-size: 15px;
+    }
+}
