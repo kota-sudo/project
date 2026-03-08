@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>採用エントリー | 男磨きハウス</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/recruit-entry.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="recruit-entry-header">
+        <a href="index.html" class="recruit-entry-logo">男磨きハウス</a>
+        <a href="recruit.html" class="recruit-entry-back">← 採用情報へ戻る</a>
+    </header>
+
+    <section class="recruit-entry-section">
+        <div class="recruit-entry-container">
+            <p class="recruit-entry-label">ENTRY FORM</p>
+            <h1 class="recruit-entry-title">採用エントリー</h1>
+            <p class="recruit-entry-desc">
+                男磨きハウスの採用に興味を持っていただきありがとうございます。<br>
+                以下のフォームよりご応募ください。
+            </p>
+
+            <form class="recruit-entry-form" id="recruitEntryForm">
+                <div class="form-group">
+                    <label for="applicantName">お名前</label>
+                    <input id="applicantName" type="text" placeholder="山田 太郎" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="applicantKana">フリガナ</label>
+                    <input id="applicantKana" type="text" placeholder="ヤマダ タロウ" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="applicantEmail">メールアドレス</label>
+                    <input id="applicantEmail" type="email" placeholder="example@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="applicantTel">電話番号</label>
+                    <input id="applicantTel" type="tel" placeholder="09012345678" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="jobType">希望職種</label>
+                    <select id="jobType" required>
+                        <option value="">選択してください</option>
+                        <option value="店舗スタッフ">店舗スタッフ</option>
+                        <option value="イベント企画スタッフ">イベント企画スタッフ</option>
+                        <option value="Web・アプリ運営スタッフ">Web・アプリ運営スタッフ</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="employmentType">希望雇用形態</label>
+                    <select id="employmentType" required>
+                        <option value="">選択してください</option>
+                        <option value="正社員">正社員</option>
+                        <option value="アルバイト">アルバイト</option>
+                        <option value="インターン">インターン</option>
+                        <option value="業務委託">業務委託</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="motivation">志望動機</label>
+                    <textarea id="motivation" rows="5" placeholder="応募理由や興味を持ったきっかけをご記入ください" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="appeal">自己PR・経験</label>
+                    <textarea id="appeal" rows="5" placeholder="接客経験、トレーニング経験、Web制作経験などがあればご記入ください"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="remarks">備考</label>
+                    <textarea id="remarks" rows="4" placeholder="面談希望日や質問があればご記入ください"></textarea>
+                </div>
+
+                <button type="submit" class="recruit-entry-btn">応募する</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="recruit-entry-footer">
+        <p>© 男磨きハウス</p>
+    </footer>
+
+    <script src="js/recruit-entry.js"></script>
+</body>
+
+</html>

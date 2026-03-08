@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    padding-top: 88px;
+    background: #000;
+    color: #fff;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 88px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    z-index: 1000;
+}
+
+.contact-header-inner {
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-logo {
+    margin: 0;
+    color: #c6ff2e;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.top-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 110px;
+    height: 44px;
+    border-radius: 999px;
+    background: #c6ff2e;
+    color: #000;
+    font-weight: 800;
+}
+
+.contact-page {
+    min-height: 100vh;
+}
+
+.contact-hero {
+    padding: 100px 20px 60px;
+    text-align: center;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.88)),
+        url("../img/gym.png") center / cover no-repeat;
+}
+
+.contact-label {
+    margin: 0 0 12px;
+    color: #c6ff2e;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+}
+
+.contact-title {
+    margin: 0 0 16px;
+    font-size: 56px;
+    font-weight: 900;
+}
+
+.contact-text {
+    margin: 0;
+    color: #ddd;
+    font-size: 18px;
+}
+
+.contact-form-section {
+    padding: 70px 20px 100px;
+}
+
+.contact-form-card {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 36px 28px;
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 24px;
+}
+
+.contact-form {
+    display: grid;
+    gap: 24px;
+}
+
+.form-group {
+    display: grid;
+    gap: 10px;
+}
+
+.form-group label {
+    font-size: 15px;
+    font-weight: 700;
+    color: #c6ff2e;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    border-radius: 14px;
+    border: 1px solid #333;
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #c6ff2e;
+}
+
+.contact-submit-btn {
+    height: 54px;
+    border: none;
+    border-radius: 999px;
+    background: #c6ff2e;
+    color: #000;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.contact-submit-btn:hover {
+    opacity: 0.95;
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 76px;
+    }
+
+    .contact-header {
+        height: 76px;
+    }
+
+    .contact-header-inner {
+        padding: 0 16px;
+    }
+
+    .contact-logo {
+        font-size: 1.2rem;
+    }
+
+    .top-btn {
+        min-width: 88px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .contact-title {
+        font-size: 38px;
+    }
+
+    .contact-text {
+        font-size: 15px;
+    }
+
+    .contact-form-card {
+        padding: 24px 18px;
+    }
+}

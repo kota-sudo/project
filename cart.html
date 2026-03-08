@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>カート | 男磨きハウス</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="cart-header">
+        <div class="cart-header-inner">
+            <h1 class="cart-logo">
+                <a href="index.html">男磨きハウス</a>
+            </h1>
+
+            <div class="cart-header-links">
+                <a href="food.html">フードページへ</a>
+                <a href="order.html">ネット購入へ</a>
+                <a href="product-detail.html">商品詳細へ</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="cart-main">
+        <section class="cart-page-head">
+            <p class="cart-page-label">CART</p>
+            <h2 class="cart-page-title">カートの中身</h2>
+            <p class="cart-page-text">
+                追加した商品を確認し、数量変更や削除ができます。
+            </p>
+        </section>
+
+        <div class="cart-layout">
+            <section class="cart-items-area">
+                <div class="cart-list-card">
+                    <div class="cart-list-head">
+                        <h3>商品一覧</h3>
+                        <p id="cart-item-count">0点</p>
+                    </div>
+
+                    <div id="cart-empty" class="cart-empty">
+                        カートに商品が入っていません。<br>
+                        ネット購入ページから商品を追加してください。
+                    </div>
+
+                    <div id="cart-list" class="cart-list"></div>
+                </div>
+            </section>
+
+            <aside class="cart-summary-area">
+                <div class="cart-summary-card">
+                    <p class="summary-label">SUMMARY</p>
+                    <h3>注文内容</h3>
+
+                    <div class="summary-row">
+                        <span>商品数</span>
+                        <strong id="summary-qty">0点</strong>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>小計</span>
+                        <strong id="summary-total">¥0</strong>
+                    </div>
+
+                    <div class="summary-row summary-row--select">
+                        <span>受取方法</span>
+                        <select id="delivery-method">
+                            <option value="store">店舗受取</option>
+                            <option value="delivery">自宅配送</option>
+                        </select>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>送料</span>
+                        <strong id="shipping-fee">¥0</strong>
+                    </div>
+
+                    <div class="summary-total-box">
+                        <span>合計</span>
+                        <strong id="grand-total">¥0</strong>
+                    </div>
+
+                    <button class="checkout-btn">注文確認へ進む</button>
+                    <a href="order.html" class="back-shop-btn">買い物を続ける</a>
+
+                    <p class="summary-note">
+                        ※ポートフォリオ用のデモ画面です
+                    </p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script src="js/cart.js"></script>
+</body>
+
+</html>

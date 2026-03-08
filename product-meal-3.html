@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>増量用パワー弁当 | 男磨きハウス</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/product-detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="scroll-bar"></div>
+
+    <header class="detail-header">
+        <div class="detail-header-inner">
+            <h1 class="detail-logo">
+                <a href="index.html">男磨きハウス</a>
+            </h1>
+
+            <div class="detail-header-links">
+                <a href="food.html">フードページへ</a>
+                <a href="order.html">ネット購入へ</a>
+                <a href="cart.html" id="cart-count-display">カート 0</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="detail-main">
+        <section class="detail-breadcrumb">
+            <a href="index.html">TOP</a>
+            <span>›</span>
+            <a href="food.html">FOOD</a>
+            <span>›</span>
+            <a href="order.html">ネット購入</a>
+            <span>›</span>
+            <p>増量用パワー弁当</p>
+        </section>
+
+        <section class="detail-product">
+            <div class="detail-gallery">
+                <div class="detail-main-image">
+                    <img id="main-product-image" src="img/meal-3.jpg" alt="増量用パワー弁当">
+                </div>
+
+                <div class="detail-thumbs">
+                    <button class="thumb-btn active" data-image="img/meal-3.jpg">
+                        <img src="img/meal-3.jpg" alt="増量用パワー弁当 サムネイル1">
+                    </button>
+                    <button class="thumb-btn" data-image="img/meal-2.jpg">
+                        <img src="img/meal-2.jpg" alt="増量用パワー弁当 サムネイル2">
+                    </button>
+                    <button class="thumb-btn" data-image="img/meal-1.jpg">
+                        <img src="img/meal-1.jpg" alt="増量用パワー弁当 サムネイル3">
+                    </button>
+                </div>
+            </div>
+
+            <div class="detail-info">
+                <p class="detail-badge">増量</p>
+                <p class="detail-purpose">増量向け</p>
+
+                <h2 class="detail-title">増量用パワー弁当</h2>
+
+                <p class="detail-rating">★★★★☆ 4.6（52件）</p>
+
+                <p class="detail-desc">
+                    しっかり食べたい人向けの高ボリュームメニュー。
+                    たんぱく質だけでなく炭水化物もしっかり確保できるため、
+                    増量期やハードなトレーニング後にもおすすめのパワー系弁当です。
+                </p>
+
+                <div class="detail-price-box">
+                    <p class="detail-price">¥980</p>
+                    <p class="detail-member-price">会員価格 ¥880</p>
+                    <p class="detail-delivery">店舗受取・配送対応</p>
+                </div>
+
+                <div class="detail-actions">
+                    <div class="qty-box">
+                        <label for="qty">数量</label>
+                        <select id="qty">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+
+                    <button id="add-cart-btn" class="detail-cart-btn" data-product-name="増量用パワー弁当">
+                        カートに入れる
+                    </button>
+                </div>
+
+                <div class="detail-tags">
+                    <span>店舗受取</span>
+                    <span>配送対応</span>
+                    <span>会員割引対象</span>
+                    <span>高たんぱく</span>
+                    <span>高ボリューム</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-sections">
+            <div class="detail-content">
+                <section class="info-card">
+                    <h3>商品の特徴</h3>
+                    <ul class="feature-list">
+                        <li>増量期向けの高ボリューム設計</li>
+                        <li>たんぱく質・炭水化物をしっかり確保</li>
+                        <li>トレーニング後の食事として満足感が高い</li>
+                        <li>店舗受取・配送の両方に対応</li>
+                    </ul>
+                </section>
+
+                <section class="info-card">
+                    <h3>栄養成分</h3>
+                    <div class="nutrition-grid">
+                        <div class="nutrition-item">
+                            <span>たんぱく質</span>
+                            <strong>42g</strong>
+                        </div>
+                        <div class="nutrition-item">
+                            <span>脂質</span>
+                            <strong>16g</strong>
+                        </div>
+                        <div class="nutrition-item">
+                            <span>炭水化物</span>
+                            <strong>78g</strong>
+                        </div>
+                        <div class="nutrition-item">
+                            <span>カロリー</span>
+                            <strong>690kcal</strong>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="info-card">
+                    <h3>こんな人におすすめ</h3>
+                    <p class="detail-text">
+                        増量したい人、トレーニング量が多くてしっかり食べたい人、
+                        食事でもエネルギーを確保したい人におすすめです。
+                        ボリューム重視でありながら、男磨きハウスらしい高たんぱく設計を意識したメニューです。
+                    </p>
+                </section>
+
+                <section class="info-card review-card-section">
+                    <div class="review-header">
+                        <h3>みんなの声</h3>
+                        <button id="toggle-reviews-btn" class="review-toggle-btn">レビューをもっと見る</button>
+                    </div>
+
+                    <div class="review-summary">
+                        <div class="review-score">
+                            <strong>4.6</strong>
+                            <span>★★★★☆</span>
+                        </div>
+                        <p>52件のレビュー</p>
+                    </div>
+
+                    <div class="review-list" id="review-list">
+                        <article class="review-item">
+                            <p class="review-stars">★★★★★</p>
+                            <h4>しっかり食べたい日に最高</h4>
+                            <p>量がちゃんとあって満足感が高いです。増量中にはかなり助かります。</p>
+                        </article>
+
+                        <article class="review-item">
+                            <p class="review-stars">★★★★☆</p>
+                            <h4>トレ後にぴったり</h4>
+                            <p>重すぎる感じではなく、でもエネルギーはしっかり取れるのが良いです。</p>
+                        </article>
+
+                        <article class="review-item extra-review">
+                            <p class="review-stars">★★★★★</p>
+                            <h4>ボリュームがあって満足</h4>
+                            <p>普通の高たんぱく弁当だと足りないけど、これはかなり満足できました。</p>
+                        </article>
+
+                        <article class="review-item extra-review">
+                            <p class="review-stars">★★★★☆</p>
+                            <h4>配送対応なのも便利</h4>
+                            <p>忙しい日でもネットから頼めるので継続しやすいです。</p>
+                        </article>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="detail-side">
+                <div class="side-card">
+                    <p class="side-label">PURCHASE INFO</p>
+                    <h3>購入方法</h3>
+                    <ul class="side-list">
+                        <li>店舗受取対応</li>
+                        <li>配送対応</li>
+                        <li>会員価格あり</li>
+                    </ul>
+                    <a href="order.html" class="side-btn">ネット購入ページへ</a>
+                </div>
+
+                <div class="side-card">
+                    <p class="side-label">RELATED</p>
+                    <h3>関連商品</h3>
+
+                    <a href="product-meal-1.html" class="related-item">
+                        <img src="img/meal-1.jpg" alt="鶏むねグリル弁当">
+                        <div>
+                            <p>鶏むねグリル弁当</p>
+                            <span>¥780</span>
+                        </div>
+                    </a>
+
+                    <a href="product-meal-2.html" class="related-item">
+                        <img src="img/meal-2.jpg" alt="高たんぱくキーマカレー">
+                        <div>
+                            <p>高たんぱくキーマカレー</p>
+                            <span>¥880</span>
+                        </div>
+                    </a>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <div class="cart-toast" id="cart-toast">カートに追加しました</div>
+
+    <script src="js/product-detail.js"></script>
+</body>
+
+</html>

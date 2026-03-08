@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    background: #0d0d0d;
+    color: #fff;
+}
+
+/* =========================
+   header
+========================= */
+
+.recruit-entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #222;
+}
+
+.recruit-entry-logo {
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #fff;
+}
+
+.recruit-entry-back {
+    text-decoration: none;
+    color: #c6ff2e;
+    font-size: 14px;
+    transition: 0.25s;
+}
+
+.recruit-entry-back:hover {
+    opacity: 0.7;
+}
+
+/* =========================
+   section
+========================= */
+
+.recruit-entry-section {
+    padding: 60px 20px 40px;
+}
+
+.recruit-entry-container {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #151515;
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #222;
+}
+
+.recruit-entry-label {
+    margin: 0 0 10px;
+    text-align: center;
+    color: #c6ff2e;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+}
+
+.recruit-entry-title {
+    margin: 0;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.recruit-entry-desc {
+    margin: 16px 0 0;
+    text-align: center;
+    color: #ccc;
+    line-height: 1.8;
+}
+
+/* =========================
+   form
+========================= */
+
+.recruit-entry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 36px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #ddd;
+    font-weight: 700;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1px solid #2f2f2f;
+    background: #101010;
+    color: #fff;
+    font-size: 15px;
+    font-family: inherit;
+    transition: 0.25s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #c6ff2e;
+    box-shadow: 0 0 0 3px rgba(198, 255, 46, 0.15);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #777;
+}
+
+.recruit-entry-btn {
+    margin-top: 8px;
+    padding: 16px;
+    border: none;
+    background: #c6ff2e;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: 0.25s;
+    box-shadow: 0 10px 24px rgba(198, 255, 46, 0.22);
+}
+
+.recruit-entry-btn:hover {
+    transform: translateY(-3px);
+    background: #b6ef1f;
+}
+
+/* =========================
+   footer
+========================= */
+
+.recruit-entry-footer {
+    text-align: center;
+    padding: 30px 20px 40px;
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+/* =========================
+   responsive
+========================= */
+
+@media screen and (max-width: 768px) {
+    .recruit-entry-header {
+        padding: 16px 20px;
+        gap: 12px;
+    }
+
+    .recruit-entry-logo {
+        font-size: 20px;
+    }
+
+    .recruit-entry-back {
+        font-size: 13px;
+    }
+
+    .recruit-entry-section {
+        padding: 50px 16px 32px;
+    }
+
+    .recruit-entry-container {
+        padding: 28px 18px;
+    }
+
+    .recruit-entry-title {
+        font-size: 28px;
+    }
+
+    .recruit-entry-desc {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ネット購入 | 男磨きハウス</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/order.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="shop-header">
+        <div class="shop-header-top">
+            <h1 class="shop-logo">
+                <a href="index.html">男磨きハウス</a>
+            </h1>
+
+            <form class="shop-search" id="shop-search-form">
+                <select id="shop-category-select">
+                    <option value="all">すべて</option>
+                    <option value="protein">プロテイン</option>
+                    <option value="meal">筋肉弁当</option>
+                    <option value="snack">軽食</option>
+                </select>
+
+                <input type="text" id="shop-search-input" placeholder="商品を検索">
+
+                <button type="submit">検索</button>
+            </form>
+
+            <div class="shop-header-links">
+                <a href="food.html">フードページへ</a>
+                <a href="cart.html" id="cart-count-display">カート 0</a>
+            </div>
+        </div>
+
+        <div class="shop-header-bottom">
+            <a href="#" class="quick-filter active" data-quick="all">すべて</a>
+            <a href="#" class="quick-filter" data-quick="protein">プロテイン</a>
+            <a href="#" class="quick-filter" data-quick="meal">筋肉弁当</a>
+            <a href="#" class="quick-filter" data-quick="member">会員割引対象</a>
+            <a href="#" class="quick-filter" data-quick="store">店舗受取</a>
+            <a href="#" class="quick-filter" data-quick="delivery">配送対応</a>
+        </div>
+    </header>
+
+    <main class="shop-main">
+        <aside class="shop-sidebar">
+            <div class="sidebar-block">
+                <h3>カテゴリ</h3>
+                <label><input type="checkbox" class="filter-category" value="protein"> プロテイン</label>
+                <label><input type="checkbox" class="filter-category" value="meal"> 筋肉弁当</label>
+                <label><input type="checkbox" class="filter-category" value="snack"> 軽食</label>
+            </div>
+
+            <div class="sidebar-block">
+                <h3>目的</h3>
+                <label><input type="checkbox" class="filter-purpose" value="cut"> 減量向け</label>
+                <label><input type="checkbox" class="filter-purpose" value="balance"> バランス型</label>
+                <label><input type="checkbox" class="filter-purpose" value="bulk"> 増量向け</label>
+            </div>
+
+            <div class="sidebar-block">
+                <h3>購入方法</h3>
+                <label><input type="checkbox" class="filter-method" value="store"> 店舗受取</label>
+                <label><input type="checkbox" class="filter-method" value="delivery"> 配送対応</label>
+                <label><input type="checkbox" class="filter-method" value="member"> 会員割引対象</label>
+            </div>
+            <div class="sidebar-block">
+                <h3>価格</h3>
+            
+                <p class="price-range-value">¥320 〜 ¥48,400+</p>
+            
+                <div class="price-slider-wrap">
+                    <input type="range" min="320" max="48400" value="3500" class="price-range">
+                </div>
+            
+                <div class="price-links">
+                    <a href="#" data-price-max="3500">3,500円以下</a>
+                    <a href="#" data-price-max="5400">¥3,500〜¥5,400</a>
+                    <a href="#" data-price-max="7600">¥5,400〜¥7,600</a>
+                    <a href="#" data-price-max="9600">¥7,600〜¥9,600</a>
+                    <a href="#" data-price-max="48400">¥9,600以上</a>
+                </div>
+            </div>
+        </aside>
+        
+
+        <section class="shop-results">
+            <div class="results-head">
+                <p>検索結果 6件</p>
+                <select>
+                    <option>おすすめ順</option>
+                    <option>価格が安い順</option>
+                    <option>価格が高い順</option>
+                </select>
+            </div>
+
+            <div class="product-list">
+                <!-- 商品1 -->
+                <article class="product-row" data-category="protein" data-purpose="balance"
+                    data-method="delivery member"
+                    data-price="4480"
+                    data-name="男磨きホエイプロテイン 1kg リッチショコラ味"
+                    data-desc="トレーニング後に取り入れやすい定番プロテイン 高たんぱくで飲みやすい人気フレーバー">
+
+                    <div class="product-row-image">
+                        <a href="product-protein-1.html">
+                            <img src="img/protein-1.jpg" alt="男磨きホエイプロテイン 1kg リッチショコラ味">
+                        </a>
+                    </div>
+                    
+                    <div class="product-row-body">
+                        <p class="product-row-badge">ベストセラー</p>
+                        <h2 class="product-row-title">
+                            <a href="product-protein-1.html">男磨きホエイプロテイン<br>1kg リッチショコラ味</a>
+                        </h2>
+                        <p class="product-row-rating">★★★★★ 4.4（238件）</p>
+                        <p class="product-row-desc">
+                            トレーニング後に取り入れやすい定番プロテイン。高たんぱくで飲みやすい人気フレーバー。
+                        </p>
+
+                        <div class="product-row-tags">
+                            <span>配送対応</span>
+                            <span>会員割引対象</span>
+                            <span>バランス型</span>
+                        </div>
+                    </div>
+
+                    <div class="product-row-buy">
+                        <p class="product-row-price">¥4,480</p>
+                        <p class="product-row-sub">会員価格 ¥4,080</p>
+                        <p class="product-row-delivery">最短翌日配送</p>
+                        <button class="product-cart-btn" data-product-name="男磨きホエイプロテイン 1kg リッチショコラ味">
+                            カートに入れる
+                        </button>
+                    </div>
+                </article>
+
+                <!-- 商品2 -->
+                <article class="product-row" data-category="protein" data-purpose="cut" data-method="delivery member"
+                data-price="3280"
+                    data-name="男磨きソイプロテイン 900g ココア味" data-desc="間食や朝食代わりにも取り入れやすいソイタイプ 継続しやすい飲みやすさ">
+
+                    <div class="product-row-image">
+                        <a href="product-protein-2.html">
+                            <img src="img/protein-2.jpg" alt="男磨きソイプロテイン 900g ココア味">
+                        </a>
+                    </div>
+                    
+                    <div class="product-row-body">
+                        <p class="product-row-badge">人気</p>
+                        <h2 class="product-row-title">
+                            <a href="product-protein-2.html">男磨きソイプロテイン<br>900g ココア味</a>
+                        </h2>
+                        <p class="product-row-rating">★★★★☆ 4.2（126件）</p>
+                        <p class="product-row-desc">
+                            間食や朝食代わりにも取り入れやすいソイタイプ。継続しやすい飲みやすさが特長。
+                        </p>
+
+                        <div class="product-row-tags">
+                            <span>配送対応</span>
+                            <span>会員割引対象</span>
+                            <span>減量向け</span>
+                        </div>
+                    </div>
+
+                    <div class="product-row-buy">
+                        <p class="product-row-price">¥3,280</p>
+                        <p class="product-row-sub">会員価格 ¥2,980</p>
+                        <p class="product-row-delivery">最短翌日配送</p>
+                        <button class="product-cart-btn" data-product-name="男磨きソイプロテイン 900g ココア味">
+                            カートに入れる
+                        </button>
+                    </div>
+                </article>
+
+                <!-- 商品3 -->
+                <article class="product-row" data-category="protein" data-purpose="balance"
+                    data-method="delivery member"
+                    data-price="1280"
+                    data-name="高たんぱくプロテインセット" data-desc="間食やトレ後に取り入れやすい 人気のプロテインセット">
+
+                    <div class="product-row-image">
+                        <a href="product-protein-set.html">
+                            <img src="img/protein-hero.jpg" alt="高たんぱくプロテインセット">
+                        </a>
+                    </div>
+                    
+                    <div class="product-row-body">
+                        <p class="product-row-badge">会員人気</p>
+                        <h2 class="product-row-title">
+                            <a href="product-protein-set.html">高たんぱくプロテインセット</a>
+                        </h2>
+                        <p class="product-row-rating">★★★★☆ 4.5（91件）</p>
+                        <p class="product-row-desc">
+                            間食やトレ後に取り入れやすい、人気のプロテインセット。飲みやすく続けやすい定番商品です。
+                        </p>
+
+                        <div class="product-row-tags">
+                            <span>配送対応</span>
+                            <span>会員割引対象</span>
+                            <span>バランス型</span>
+                        </div>
+                    </div>
+
+                    <div class="product-row-buy">
+                        <p class="product-row-price">¥1,280</p>
+                        <p class="product-row-sub">会員価格 ¥1,080</p>
+                        <p class="product-row-delivery">最短翌日配送</p>
+                        <button class="product-cart-btn" data-product-name="高たんぱくプロテインセット">
+                            カートに入れる
+                        </button>
+                    </div>
+                </article>
+
+                <!-- 商品4 -->
+                <article class="product-row" data-category="meal" data-purpose="cut" data-method="store delivery"
+                    data-price="780"
+                    data-name="鶏むねグリル弁当" data-desc="高たんぱく 低脂質の定番メニュー 減量期でも取り入れやすい人気の筋肉弁当">
+
+                    <div class="product-row-image">
+                        <a href="product-meal-1.html">
+                            <img src="img/meal-1.jpg" alt="鶏むねグリル弁当">
+                        </a>
+                    </div>
+                    
+                    <div class="product-row-body">
+                        <p class="product-row-badge">おすすめ</p>
+                        <h2 class="product-row-title">
+                            <a href="product-meal-1.html">鶏むねグリル弁当</a>
+                        </h2>
+                        <p class="product-row-rating">★★★★☆ 4.5（84件）</p>
+                        <p class="product-row-desc">
+                            高たんぱく・低脂質の定番メニュー。減量期でも取り入れやすい人気の筋肉弁当。
+                        </p>
+
+                        <div class="product-row-tags">
+                            <span>店舗受取</span>
+                            <span>配送対応</span>
+                            <span>減量向け</span>
+                        </div>
+                    </div>
+
+                    <div class="product-row-buy">
+                        <p class="product-row-price">¥780</p>
+                        <p class="product-row-sub">会員価格 ¥680</p>
+                        <p class="product-row-delivery">店舗受取可</p>
+                        <button class="product-cart-btn" data-product-name="鶏むねグリル弁当">
+                            カートに入れる
+                        </button>
+                    </div>
+                </article>
+
+                <!-- 商品5 -->
+                <article class="product-row" data-category="meal" data-purpose="balance"
+                    data-method="store delivery member"
+                    data-price="880" data-name="高たんぱくキーマカレー"
+                    data-desc="食べ応えがありつつ脂質は控えめ トレ後にも相性が良い人気メニュー">
+
+                    <div class="product-row-image">
+                        <a href="product-meal-2.html">
+                            <img src="img/meal-2.jpg" alt="高たんぱくキーマカレー">
+                        </a>
+                    </div>
+                    
+                    <div class="product-row-body">
+                        <p class="product-row-badge">人気</p>
+                        <h2 class="product-row-title">
+                            <a href="product-meal-2.html">高たんぱくキーマカレー</a>
+                        </h2>
+                        <p class="product-row-rating">★★★★☆ 4.3（67件）</p>
+                        <p class="product-row-desc">
+                            食べ応えがありつつ脂質は控えめ。トレ後にも相性が良い人気メニュー。
+                        </p>
+
+                        <div class="product-row-tags">
+                            <span>店舗受取</span>
+                            <span>配送対応</span>
+                            <span>バランス型</span>
+                        </div>
+                    </div>
+
+                    <div class="product-row-buy">
+                        <p class="product-row-price">¥880</p>
+                        <p class="product-row-sub">会員価格 ¥780</p>
+                        <p class="product-row-delivery">店舗受取・配送対応</p>
+                        <button class="product-cart-btn" data-product-name="高たんぱくキーマカレー">
+                            カートに入れる
+                        </button>
+                    </div>
+                </article>
+
+                <!-- 商品6 -->
+                <article class="product-row" data-category="meal" data-purpose="bulk" data-method="store delivery"
+                    data-price="980"
+                    data-name="増量用パワー弁当" data-desc="しっかり食べたい人向けの高ボリュームメニュー 増量期におすすめ">
+
+                    <div class="product-row-image">
+                        <a href="product-meal-3.html">
+                            <img src="img/meal-3.jpg" alt="増量用パワー弁当">
+                        </a>
+                    </div>
+                    
+                    <div class="product-row-body">
+                        <p class="product-row-badge">増量</p>
+                        <h2 class="product-row-title">
+                            <a href="product-meal-3.html">増量用パワー弁当</a>
+                        </h2>
+                        <p class="product-row-rating">★★★★☆ 4.6（52件）</p>
+                        <p class="product-row-desc">
+                            しっかり食べたい人向けの高ボリュームメニュー。増量期におすすめ。
+                        </p>
+
+                        <div class="product-row-tags">
+                            <span>店舗受取</span>
+                            <span>配送対応</span>
+                            <span>増量向け</span>
+                        </div>
+                    </div>
+
+                    <div class="product-row-buy">
+                        <p class="product-row-price">¥980</p>
+                        <p class="product-row-sub">会員価格 ¥880</p>
+                        <p class="product-row-delivery">店舗受取・配送対応</p>
+                        <button class="product-cart-btn" data-product-name="増量用パワー弁当">
+                            カートに入れる
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div class="cart-toast" id="cart-toast">カートに追加しました</div>
+
+    <script src="js/order.js"></script>
+</body>
+
+</html>
